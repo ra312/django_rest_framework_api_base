@@ -1,0 +1,4 @@
+We create a minimal django project with a <todos> app
+and an <api> app.
+Exploiting djangorestframework and serialization, we
+implement methods to add new records or view existing ones
