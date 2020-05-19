@@ -1,13 +1,15 @@
 # api/serializers.py
 from rest_framework import serializers
-from todos import models
+from employees import models
 
 
-class TodoSerializer(serializers.ModelSerializer):
+class EmployeeSerializer(serializers.ModelSerializer):
 	class Meta:
 		fields = (
 			'id',
+			'name',
 			'title',
+			'department',
 			'description',
 		)
-		model = models.Todo
+		model = models.Employee

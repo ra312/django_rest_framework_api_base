@@ -1,15 +1,15 @@
 # api/views.py
 from rest_framework import generics
 
-from todos import models
+from employees import models
 from . import serializers
 
 
-class ListTodo(generics.ListCreateAPIView):
-    queryset = models.Todo.objects.all()
-    serializer_class = serializers.TodoSerializer
+class ListEmployee(generics.ListCreateAPIView):
+    queryset = models.Employee.objects.all()
+    serializer_class = serializers.EmployeeSerializer
 
 
-class DetailTodo(generics.RetrieveUpdateDestroyAPIView):
-    queryset = models.Todo.objects.all()
-    serializer_class = serializers.TodoSerializer
+class DetailEmployee(generics.RetrieveUpdateDestroyAPIView):
+    queryset = models.Employee.objects.all()
+    serializer_class = serializers.EmployeeSerializer
