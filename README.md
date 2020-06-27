@@ -6,4 +6,4 @@ conda install pip
 
 pip install -r requirements.txt
 
-python maange.py runserver
+python manage.py runserver
